@@ -1,0 +1,236 @@
+Our all data enteries are these :
+ {
+  _id: new ObjectId('659d6633bc25846501e3f0ca'),
+  username: 'a',
+  nickname: 'A',
+  gender: 'm',
+  age: 21,
+  category: [ 'a', 'b', 'b' ],
+  data: 2024-01-09T15:27:32.205Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b6031a74f82d137c76b'),
+  username: 'ajay',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca monitor', 'great' ],
+  data: 2024-01-10T06:38:20.415Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e4452ff9b3edbfd99c4fc'),
+  username: 'nope',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [],
+  data: 2024-01-10T07:15:22.054Z,
+  __v: 0
+}
+
+after case- insensitive search:
+ {
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b6031a74f82d137c76b'),
+  username: 'ajay',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca monitor', 'great' ],
+  data: 2024-01-10T06:38:20.415Z,
+  __v: 0
+}
+
+after searching 'bca' item in category field :
+ {
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+}
+
+after searching enteries created between date 1 to date 2 :
+ {
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b6031a74f82d137c76b'),
+  username: 'ajay',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca monitor', 'great' ],
+  data: 2024-01-10T06:38:20.415Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e4452ff9b3edbfd99c4fc'),
+  username: 'nope',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [],
+  data: 2024-01-10T07:15:22.054Z,
+  __v: 0
+}
+
+after finding the enteries that are having a category field either filled or null :
+ {
+  _id: new ObjectId('659d6633bc25846501e3f0ca'),
+  username: 'a',
+  nickname: 'A',
+  gender: 'm',
+  age: 21,
+  category: [ 'a', 'b', 'b' ],
+  data: 2024-01-09T15:27:32.205Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b6031a74f82d137c76b'),
+  username: 'ajay',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca monitor', 'great' ],
+  data: 2024-01-10T06:38:20.415Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e4452ff9b3edbfd99c4fc'),
+  username: 'nope',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [],
+  data: 2024-01-10T07:15:22.054Z,
+  __v: 0
+}
+
+after searching a string length from one point to another in username :
+ {
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b374ea431ec99adffdd'),
+  username: 'ajay',
+  nickname: 'kaushik',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca', 'great' ],
+  data: 2024-01-10T06:37:32.313Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3b6031a74f82d137c76b'),
+  username: 'ajay',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [ 'friend', 'bca monitor', 'great' ],
+  data: 2024-01-10T06:38:20.415Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e4452ff9b3edbfd99c4fc'),
+  username: 'nope',
+  nickname: 'pandatji',
+  gender: 'm',
+  age: 25,
+  category: [],
+  data: 2024-01-10T07:15:22.054Z,
+  __v: 0
+}
+
+after searching the age between 20 to 22 :
+ {
+  _id: new ObjectId('659d6633bc25846501e3f0ca'),
+  username: 'a',
+  nickname: 'A',
+  gender: 'm',
+  age: 21,
+  category: [ 'a', 'b', 'b' ],
+  data: 2024-01-09T15:27:32.205Z,
+  __v: 0
+},{
+  _id: new ObjectId('659e3afde8ceebb384f76e88'),
+  username: 'kuldeep',
+  nickname: 'kumar',
+  gender: 'm',
+  age: 21,
+  category: [ 'mca', 'bca', 'abc' ],
+  data: 2024-01-10T06:36:41.622Z,
+  __v: 0
+}
